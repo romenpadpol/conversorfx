@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="TextoSalida" fx:id="TextoSalida" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="454.0" style="-fx-background-color: black;" text="0" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button id="EuroDolar" layoutX="392.0" layoutY="109.0" mnemonicParsing="false" onAction="#EuroDolar" style="-fx-background-color: blue;" text="€ --&gt; $" textFill="#e8e8e8" />
+      <Button id="DolarEuro" layoutX="392.0" layoutY="178.0" mnemonicParsing="false" onAction="#DolarEuro" style="-fx-background-color: blue;" text="\$ --&gt; €" textFill="WHITE" />
+      <Label layoutX="398.0" layoutY="75.0" />
+      <TextField id="TextoEntrada" fx:id="TextoEntrada" layoutX="33.0" layoutY="178.0" prefHeight="25.0" prefWidth="305.0" />
+      <Label layoutX="33.0" layoutY="136.0" text="Introduce una cuantia en numeros." textFill="#5b3636">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label id="EuroaDolar" layoutX="384.0" layoutY="84.0" text="Euro a Dolar" />
+      <Label id="DolaraEuro" layoutX="384.0" layoutY="150.0" text="Dolar a Euro" />
+      <Accordion />
+      <Button layoutX="27.0" layoutY="80.0" mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+   </children>
+</Pane>
